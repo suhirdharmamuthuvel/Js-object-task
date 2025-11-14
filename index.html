@@ -1,0 +1,182 @@
+<!-- 
+--------------------------------------------- mini project----------------------------------------
+--------------with chatgpt help--------->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            animation: glow 2s infinite alternate;
+            text-shadow: 0 0 10px rgba(255,255,255,0.7);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.97); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #fff; }
+            100% { text-shadow: 0 0 25px #fff, 0 0 40px #00eaff; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>✨ Student Management System ✨</h1>
+
+<script>
+    let students = [];
+
+    function addStudent(id, name, age, grade, course) {
+        if (!id || !name || !age || !grade || !course) {
+            alert("Please fill all fields!");
+            return;
+        }
+
+        if (students.some(s => s.id == id)) {
+            alert("Record already exists!");
+            return;
+        }
+
+        students.push({ id, name, age, grade, course });
+        alert("Record added successfully!");
+    }
+    function viewStudents() {
+        if (students.length === 0) {
+            alert("No records found!");
+            return;
+        }
+
+        let list = "List of Students:\n\n";
+        students.forEach(s => {
+            list += `ID: ${s.id}
+Name: ${s.name}
+Age: ${s.age}
+Grade: ${s.grade}
+Course: ${s.course}
+-------------------------\n`;
+        });
+
+        alert(list);
+    }
+    function updateStudent(id, newGrade, newCourse) {
+        let student = students.find(s => s.id == id);
+
+        if (!student) {
+            alert("Record not found!");
+            return;
+        }
+
+        if (newGrade) student.grade = newGrade;
+        if (newCourse) student.course = newCourse;
+
+        alert("Record updated successfully!");
+    }
+    function deleteStudent(id) {
+        let index = students.findIndex(s => s.id == id);
+
+        if (index === -1) {
+            alert("Record not found!");
+            return;
+        }
+
+        students.splice(index, 1);
+        alert("Record deleted successfully!");
+    }
+    function searchStudent(id) {
+        let student = students.find(s => s.id == id);
+
+        if (!student) {
+            alert("Record not found!");
+            return;
+        }
+
+        alert(
+`Student Found:
+
+ID: ${student.id}
+Name: ${student.name}
+Age: ${student.age}
+Grade: ${student.grade}
+Course: ${student.course}`
+        );
+    }
+    while (true) {
+        let choice = prompt(
+`✨ STUDENT MANAGEMENT SYSTEM ✨
+
+1. Add Student
+2. View All Students
+3. Update Student
+4. Delete Student
+5. Search Student
+6. Exit
+
+Enter your choice:`
+        );
+
+        if (choice === null) break;
+
+        switch (choice) {
+            case "1":
+                addStudent(
+                    prompt("Enter Student ID:"),
+                    prompt("Enter Student Name:"),
+                    prompt("Enter Student Age:"),
+                    prompt("Enter Student Grade:"),
+                    prompt("Enter Student Course:")
+                );
+                break;
+
+            case "2":
+                viewStudents();
+                break;
+
+            case "3":
+                updateStudent(
+                    prompt("Enter Student ID to update:"),
+                    prompt("Enter new Grade (leave blank to keep unchanged):"),
+                    prompt("Enter new Course (leave blank to keep unchanged):")
+                );
+                break;
+
+            case "4":
+                deleteStudent(prompt("Enter Student ID to delete:"));
+                break;
+
+            case "5":
+                searchStudent(prompt("Enter Student ID to search:"));
+                break;
+
+            case "6":
+                alert("Exiting system. Goodbye!");
+                break;
+
+            default:
+                alert("Invalid choice! Try again.");
+        }
+
+        if (choice === "6") break;
+    }
+</script>
+</body>
+</html> --> 
