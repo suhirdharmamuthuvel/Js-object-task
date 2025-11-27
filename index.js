@@ -11,6 +11,8 @@
 // for (let key in car) {
 //   console.log(car[key]);
 // }
+
+
 // --------------------Task 2: Add, Update, and Delete Properties---------------------------------------------
 // ------------myself---------->
 // let person = {
@@ -21,6 +23,8 @@
 // person.age = 26;
 // delete person.name;
 // console.log(person);
+
+
 // ---------------------Task 3: Object with Methods------------------------------------------------------------
 // ------------myself---------->
 // const calculator = {
@@ -34,6 +38,8 @@
 // console.log(calculator.add(4, 2));  
 // console.log(calculator.subtract(4, 2)); 
 // console.log(calculator.multiply(4, 2)); 
+
+
 // -----------------------Task 4: Nested Object Access--------------------------------------
 // ------------myself---------->
 //   const student = {
@@ -47,6 +53,8 @@
 // console.log("Student Name:", student.name);
 // console.log("Math Marks:", student.marks.math);
 // console.log("Science Marks:", student.marks.science);
+
+
 // -----------------------Task 5: Loop Through Object and Count Properties----------------------------
 // ------------myself---------->
 // const laptop = {
@@ -59,6 +67,8 @@
 // for (let key in laptop) {
 //   count++;}
 // console.log(" Property count:", count);
+
+
 // // -------------------------Task 6: Shallow Copy vs Deep Copy----------------------------------
 //------------myself---------->
 //  const student = {
@@ -72,6 +82,8 @@
 // /Explanation
 // In a shallow copy, if you change the value in the copied object, the original object will also change because both share the same memory address.
 // But in a deep copy, if you change the value in the copied object, the original object will not change because they do not share the same memory address.
+
+
 // ---------------------------Task 7: Merge Multiple Objects---------------------------------
 //------------myself---------->
 //  const obj1 = { id: 101, name: "Alice" };
@@ -81,6 +93,8 @@
 // console.log("Merged using Object.assign():", mergedObject1);
 // const mergedObject2 = { ...obj1, ...obj2, ...obj3 };
 // console.log("Merged using Spread Operator:", mergedObject2);
+
+
 // -------------------------------Task 8: Freeze and Modify-------------------------------------
 // ------------myself---------->
 // //  const settings = {
@@ -92,6 +106,8 @@
 // settings.mode = "compact";   
 // delete settings.fontSize;    
 // console.log(settings);
+
+
 // -------------------------------Task 9: Object Destructuring----------------------------------------
 // ------------myself---------->
 // const user = {
@@ -111,6 +127,8 @@
 // console.log("Age:", userAge);
 // console.log("City:", city);
 // console.log("Country:", country);
+
+
 // --------------------------Task 10: Count Nested Object Properties---------------------------------
 // ------------with help of chatgpt--------
 // const person = {
@@ -132,6 +150,8 @@
 // }
 // const total = countProperties(person);
 // console.log("Total Properties:", total);
+
+
 // --------------------------mini proect in (index.html)-----------------------------------
 
 
